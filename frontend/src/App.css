@@ -1,0 +1,217 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  color: rgb(62, 2, 2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Header Styles */
+.app-header {
+  padding: 20px 0;
+  margin-bottom: 0px;
+}
+
+.logo {
+  font-size: clamp(32px, 6vw, 70px);
+  color: #ec7379;
+  margin-bottom: 10px;
+}
+
+.app-header h1 {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #7403f5, #9540f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.app-header p {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  opacity: 0.9;
+  max-width: min(600px, 90vw);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.generator-section,
+.loading-section,
+.error-section,
+.exam-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.loading-section {
+  padding: 60px 0;
+}
+
+.error-section {
+  padding: 40px 0;
+}
+
+/* Footer */
+.app-footer {
+  margin-top: 50px;
+  padding: 30px 0;
+  opacity: 1;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .generator-section,
+  .exam-section {
+    max-width: 100%;
+    width: 95%;
+  }
+}
+
+/* Small Tablet (576px - 767px) */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .app-header {
+    padding: 15px 0;
+  }
+
+  .header-content {
+    padding: 15px 10px;
+  }
+
+  .generator-section,
+  .exam-section,
+  .loading-section,
+  .error-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-content {
+    padding: 10px 0;
+  }
+
+  .app-footer {
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+}
+
+/* Mobile (480px - 575px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .app-header {
+    padding: 10px 0;
+  }
+
+  .header-content {
+    padding: 10px 5px;
+  }
+
+  .main-content {
+    padding: 5px 0;
+    margin-top: 10px;
+  }
+
+  .generator-section {
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  .app-footer {
+    margin-top: 25px;
+    padding: 15px 0;
+  }
+}
+
+/* Small Mobile (up to 479px) */
+@media (max-width: 479px) {
+  .container {
+    padding: 0 8px;
+  }
+
+  .app-header {
+    padding: 8px 0;
+  }
+
+  .header-content {
+    padding: 8px;
+  }
+
+  .main-content {
+    padding: 5px;
+  }
+
+  .generator-section {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .app-footer {
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+}
+
+/* Extra Small Mobile (up to 320px) */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 5px;
+  }
+  
+  .app-header h1 {
+    word-break: break-all;
+  }
+  
+  .generator-section {
+    padding: 5px;
+  }
+}
